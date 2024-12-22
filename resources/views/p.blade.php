@@ -1,3 +1,0 @@
-<html>
-    mantap
-</html>
