@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kopi Kenangan Mantan</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Questrial&family=Playfair+Display:wght@400;700&display=swap");
+
+      .gradient-text {
+        background: linear-gradient(135deg, #8b4513, #d2691e);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .custom-shape-divider-bottom-1687456789 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+      }
+
+      .parallax-bg {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .glass-effect {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      .hover-card {
+        transition: all 0.3s ease;
+      }
+
+      .hover-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body
+    class="font-['Questrial'] bg-gradient-to-br from-amber-50 via-orange-50 to-red-50"
+  >
+    <!-- Navbar with improved blur effect -->
+    <nav
+      class="fixed w-full bg-white/70 backdrop-blur-xl shadow-lg z-50 transition-all duration-300"
+    >
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center h-16">
+          <a
+            href="#"
+            class="text-2xl font-['Playfair_Display'] font-bold gradient-text"
+            >KKM</a
+          >
+
+          <!-- Desktop Menu with hover effects -->
+          <div class="hidden md:flex space-x-8">
+            <a
+              href="#home"
+              class="text-gray-700 hover:text-amber-600 transition-all hover:scale-105"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="text-gray-700 hover:text-amber-600 transition-all hover:scale-105"
+              >Tentang Kami</a
+            >
+            <a
+              href="#menu"
+              class="text-gray-700 hover:text-amber-600 transition-all hover:scale-105"
+              >Menu</a
+            >
+            <a
+              href="#contact"
+              class="text-gray-700 hover:text-amber-600 transition-all hover:scale-105"
+              >Kontak</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Enhanced Hero Section -->
+    <section
+      id="home"
+      class="min-h-screen flex items-center justify-center bg-gradient-to-br from-amber-100 via-orange-50 to-red-100 relative overflow-hidden"
+    >
+      <div class="absolute inset-0 bg-[url('img/pattern.png')] opacity-5"></div>
+      <div
+        class="container mx-auto px-4 flex flex-col md:flex-row items-center relative z-10"
+      >
+        <div class="md:w-1/2 text-center md:text-left" data-aos="fade-right">
+          <h1
+            class="text-4xl md:text-7xl font-['Playfair_Display'] font-bold gradient-text mb-4"
+          >
+            Kopi Kenangan Mantan
+          </h1>
+          <h2 class="text-xl md:text-2xl text-amber-700 mb-8 font-light">
+            Secangkir Kenangan Di Setiap
+            <span class="text-amber-500 font-semibold">Tetesnya.</span>
+          </h2>
+          <button
+            class="bg-gradient-to-r from-amber-800 to-amber-600 text-white px-8 py-3 rounded-full hover:shadow-2xl transition-all transform hover:scale-105 hover:from-amber-700 hover:to-amber-500"
+          >
+            Pesan Sekarang
+          </button>
+        </div>
+        <div class="md:w-1/2 mt-8 md:mt-0 relative" data-aos="fade-left">
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-amber-500/10 to-red-500/10 rounded-full filter blur-3xl"
+          ></div>
+          <img
+            src="img/tangan.png"
+            alt="Coffee Cup"
+            class="max-w-md mx-auto transform hover:rotate-6 transition-all duration-500 relative z-10"
+          />
+        </div>
+      </div>
+      <div class="custom-shape-divider-bottom-1687456789">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+            class="fill-white"
+          ></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Enhanced About Section -->
+    <section id="about" class="py-20 bg-white relative">
+      <div class="container mx-auto px-4">
+        <h3
+          class="text-4xl font-['Playfair_Display'] font-bold text-center gradient-text mb-2"
+          data-aos="fade-up"
+        >
+          Tentang Kami
+        </h3>
+        <p
+          class="text-xl text-center text-amber-700 mb-12"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          Why Should You Choose Our Coffee?
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Enhanced Cards -->
+          <div
+            class="hover-card bg-white rounded-xl shadow-lg overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="relative">
+              <img
+                src="img/biji-kopi 2.jpg"
+                class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110"
+                alt="Coffee Beans"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"
+              ></div>
+            </div>
+            <div class="p-6">
+              <p class="text-gray-700 leading-relaxed">
+                Kopi khas Guatemala
+                <span class="bg-yellow-100 px-1">terbaik</span> biji berkualitas
+                tinggi, dipanggang sempurna, rasa kompleks dan membangkitkan
+                semangat.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="hover-card bg-white rounded-xl shadow-lg overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="relative">
+              <img
+                src="img/cafe-outdoor.jpg"
+                class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110"
+                alt="Cafe Outdoor"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"
+              ></div>
+            </div>
+            <div class="p-6">
+              <p class="text-gray-700 leading-relaxed">
+                Suasana di cafe begitu hangat dan nyaman, menciptakan ruang yang
+                ideal untuk bersantai, mendapatkan inspirasi, dan bersosialisasi
+                dengan santai.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="hover-card bg-white rounded-xl shadow-lg overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="relative">
+              <img
+                src="img/apple-pie.jpg"
+                class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110"
+                alt="Apple Pie"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"
+              ></div>
+            </div>
+            <div class="p-6">
+              <p class="text-gray-700 leading-relaxed">
+                Apple pie, menu yang banyak peminat, mengingatkan pada aroma
+                manis dari masa lalu yang penuh kenangan, membawa rasa hangat
+                dan kebahagiaan di setiap gigitannya.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Enhanced Menu Section -->
+    <!-- Enhanced Menu Section -->
+    <section
+      id="menu"
+      class="py-20 bg-gradient-to-br from-amber-50 via-orange-50 to-red-50 relative"
+    >
+      <div class="container mx-auto px-4">
+        <h3
+          class="text-4xl font-['Playfair_Display'] font-bold text-center gradient-text mb-12"
+          data-aos="fade-up"
+        >
+          Menu Kami
+        </h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Espresso -->
+          <div
+            class="hover-card bg-white/80 backdrop-blur-md rounded-xl shadow-lg overflow-hidden"
+            data-aos="fade-up"
+          >
+            <div class="relative">
+              <img
+                src="img/menu-1.jpg"
+                class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110"
+                alt="Espresso"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"
+              ></div>
+            </div>
+            <div class="p-6">
+              <h5
+                class="text-xl font-['Playfair_Display'] font-bold gradient-text mb-2"
+              >
+                Espresso
+              </h5>
+              <p class="text-gray-600 mb-4 leading-relaxed">
+                Nikmati secangkir kopi Espresso kami yang memiliki cita rasa
+                yang khas, dengan biji kopi terbaik kami yang berasal dari
+                Guatemala
+              </p>
+              <p class="text-amber-800 font-bold">IDR 35k</p>
+            </div>
+          </div>
+
+          <!-- Caramel Macchiato -->
+          <div
+            class="hover-card bg-white/80 backdrop-blur-md rounded-xl shadow-lg overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="relative">
+              <img
+                src="img/menu-2.jpg"
+                class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110"
+                alt="Caramel Macchiato"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"
+              ></div>
+            </div>
+            <div class="p-6">
+              <h5
+                class="text-xl font-['Playfair_Display'] font-bold gradient-text mb-2"
+              >
+                Caramel Macchiato
+              </h5>
+              <p class="text-gray-600 mb-4 leading-relaxed">
+                Paduan sempurna espresso dengan susu steam dan caramel sauce,
+                menciptakan harmoni rasa yang memikat
+              </p>
+              <p class="text-amber-800 font-bold">IDR 45k</p>
+            </div>
+          </div>
+
+          <!-- Cappuccino -->
+          <div
+            class="hover-card bg-white/80 backdrop-blur-md rounded-xl shadow-lg overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="relative">
+              <img
+                src="img/menu-3.jpg"
+                class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110"
+                alt="Cappuccino"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"
+              ></div>
+            </div>
+            <div class="p-6">
+              <h5
+                class="text-xl font-['Playfair_Display'] font-bold gradient-text mb-2"
+              >
+                Cappuccino
+              </h5>
+              <p class="text-gray-600 mb-4 leading-relaxed">
+                Klasik Italia dengan espresso dan foam susu yang lembut,
+                disajikan dengan taburan cocoa powder
+              </p>
+              <p class="text-amber-800 font-bold">IDR 40k</p>
+            </div>
+          </div>
+
+          <!-- Croissant -->
+          <div
+            class="hover-card bg-white/80 backdrop-blur-md rounded-xl shadow-lg overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="relative">
+              <img
+                src="img/menu-4.jpg"
+                class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110"
+                alt="Croissant"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"
+              ></div>
+            </div>
+            <div class="p-6">
+              <h5
+                class="text-xl font-['Playfair_Display'] font-bold gradient-text mb-2"
+              >
+                French fries
+              </h5>
+              <p class="text-gray-600 mb-4 leading-relaxed">
+                Croissant klasik berlapis dengan tekstur renyah di luar dan
+                lembut di dalam, sempurna untuk teman ngopi
+              </p>
+              <p class="text-amber-800 font-bold">IDR 30k</p>
+            </div>
+          </div>
+
+          <!-- Apple Pie -->
+          <div
+            class="hover-card bg-white/80 backdrop-blur-md rounded-xl shadow-lg overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="relative">
+              <img
+                src="img/apple-pie.jpg"
+                class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110"
+                alt="Apple Pie"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"
+              ></div>
+            </div>
+            <div class="p-6">
+              <h5
+                class="text-xl font-['Playfair_Display'] font-bold gradient-text mb-2"
+              >
+                Apple Pie
+              </h5>
+              <p class="text-gray-600 mb-4 leading-relaxed">
+                Pie apel hangat dengan isian apel manis dan rempah, disajikan
+                dengan vanilla ice cream
+              </p>
+              <p class="text-amber-800 font-bold">IDR 38k</p>
+            </div>
+          </div>
+
+          <!-- Affogato -->
+          <div
+            class="hover-card bg-white/80 backdrop-blur-md rounded-xl shadow-lg overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div class="relative">
+              <img
+                src="img/menu-6.jpg"
+                class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110"
+                alt="Affogato"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"
+              ></div>
+            </div>
+            <div class="p-6">
+              <h5
+                class="text-xl font-['Playfair_Display'] font-bold gradient-text mb-2"
+              >
+                Affogato
+              </h5>
+              <p class="text-gray-600 mb-4 leading-relaxed">
+                Perpaduan es krim vanilla premium dengan shot espresso panas,
+                menciptakan sensasi rasa yang unik
+              </p>
+              <p class="text-amber-800 font-bold">IDR 42k</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Enhanced Footer -->
+    <footer
+      class="bg-gradient-to-r from-amber-900 to-amber-800 text-white py-12"
+    >
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-8 md:mb-0">
+            <h4 class="text-3xl font-['Playfair_Display'] font-bold mb-2">
+              Kopi Kenangan Mantan
+            </h4>
+            <p class="text-amber-200">Secangkir Kenangan Di Setiap Tetesnya.</p>
+          </div>
+          <div class="flex items-center space-x-4">
+            <a
+              href="#"
+              class="hover:text-amber-200 transition-all transform hover:scale-110"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                class="feather feather-instagram"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path
+                  d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                ></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <span class="text-amber-200">@faisal._.rpld</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Enhanced Animations
+      AOS.init({
+        duration: 1000,
+        once: true,
+        mirror: true,
+      });
+
+      // Navbar Scroll Effect
+      window.addEventListener("scroll", () => {
+        const nav = document.querySelector("nav");
+        if (window.scrollY > 100) {
+          nav.classList.add("shadow-xl");
+          nav.classList.remove("bg-white/70");
+          nav.classList.add("bg-white/90");
+        } else {
+          nav.classList.remove("shadow-xl");
+          nav.classList.add("bg-white/70");
+          nav.classList.remove("bg-white/90");
+        }
+      });
+
+      // Enhanced GSAP Animations
+      gsap.from(".hero-text", {
+        duration: 1.5,
+        y: 50,
+        opacity: 0,
+        stagger: 0.3,
+        ease: "power4.out",
+      });
+
+      // Smooth Scroll
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
